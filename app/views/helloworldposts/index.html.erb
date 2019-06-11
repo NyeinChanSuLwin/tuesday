@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Helloworldposts</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @helloworldposts.each do |helloworldpost| %>
+      <tr>
+        <td><%= helloworldpost.title %></td>
+        <td><%= helloworldpost.description %></td>
+        <td><%= link_to 'Show', helloworldpost %></td>
+        <td><%= link_to 'Edit', edit_helloworldpost_path(helloworldpost) %></td>
+        <td><%= link_to 'Destroy', helloworldpost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Helloworldpost', new_helloworldpost_path %>

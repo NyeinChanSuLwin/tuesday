@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <strong>Title:</strong>
+  <%= @helloworldpost.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @helloworldpost.description %>
+</p>
+
+<%= link_to 'Edit', edit_helloworldpost_path(@helloworldpost) %> |
+<%= link_to 'Back', helloworldposts_path %>

@@ -1,0 +1,2 @@
+class Helloworldpost < ApplicationRecord
+end
